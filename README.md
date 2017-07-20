@@ -27,6 +27,16 @@ public class MailSendUtil {
 
 -----
 
+手机验证码发送类 用的是某平台的API，注册后免费送50次，你可以根据自己需要去注册一个或者去掉这个功能。
+SendSMSAction.java中：
+```java
+NameValuePair[] data = {//提交短信
+			    new NameValuePair("account", ""), //查看用户名请登录用户中心->验证码、通知短信->帐户及签名设置->APIID
+			    new NameValuePair("password", ""),  //查看密码请登录用户中心->验证码、通知短信->帐户及签名设置->APIKEY
+```
+
+-----
+
 配置文件SpringMVC.xml中配置数据源也要根据你的数据库设置来进行相应更改：
 ```
 	<!-- 配置数据源 -->

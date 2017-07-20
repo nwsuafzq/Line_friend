@@ -32,8 +32,8 @@ public class SendSMSAction {
 		
 	    String content = new String("您的验证码是：" + mobile_code + "。请不要把验证码泄露给其他人。");
 		NameValuePair[] data = {//提交短信
-			    new NameValuePair("account", "C17586719"), //查看用户名请登录用户中心->验证码、通知短信->帐户及签名设置->APIID
-			    new NameValuePair("password", "51d94112d6bc149aaf5397f5eb218a1b"),  //查看密码请登录用户中心->验证码、通知短信->帐户及签名设置->APIKEY
+			    new NameValuePair("account", ""), //查看用户名请登录用户中心->验证码、通知短信->帐户及签名设置->APIID
+			    new NameValuePair("password", ""),  //查看密码请登录用户中心->验证码、通知短信->帐户及签名设置->APIKEY
 			    //new NameValuePair("password", util.StringUtil.MD5Encode("密码")),
 			    new NameValuePair("mobile", mobile),
 			    new NameValuePair("content", content),

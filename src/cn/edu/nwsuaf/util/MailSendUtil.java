@@ -1,4 +1,4 @@
-package cn.edu.nwsuaf.util;
+﻿package cn.edu.nwsuaf.util;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -18,10 +18,10 @@ import java.util.Properties;
  * 2017-6-23
  */
 public class MailSendUtil {
-	private final static String host = "smtp.sina.com"; // 163的服务器
-	private final static String formName = "zhangq_nwafu@sina.com";// 你的邮箱
-	private final static String password = "zhangqiong2008"; // 授权码
-	private final static String replayAddress = "zhangq_nwafu@sina.com"; // 你的邮箱
+	private final static String host = "smtp.sina.com"; // sina的服务器
+	private final static String formName = "";// 你的邮箱
+	private final static String password = ""; // 授权码
+	private final static String replayAddress = ""; // 你的邮箱
 
 	public static void sendHtmlMail(MailInfo info) throws Exception {
 		info.setHost(host);
