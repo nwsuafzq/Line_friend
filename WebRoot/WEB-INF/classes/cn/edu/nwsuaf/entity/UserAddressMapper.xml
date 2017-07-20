@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.edu.nwsuaf.dao.UserAddressDao">
+
+	<!-- 添加用户地址 -->
+	<insert id="addUserAddress" parameterType="cn.edu.nwsuaf.entity.UserAddress">
+		insert into
+		receive_address(user_id,receive_name,province,city,district,full_address,phone,postal_code)
+		values(#{user.id},#{receive_name},#{province},#{city},#{district},#{full_address},#{phone},#{postal_code})
+	</insert>
+
+
+	<!-- 关联查询 -->
+
+	<!-- 查询用户所有的地址信息 -->
+	<select id="findUserAddressById" parameterType="int" resultMap="UserMapAddress">
+		select
+		* from user where id = #{user_id}
+	</select>
+
+	<select id="findAllAddress" parameterType="cn.edu.nwsuaf.entity.User"
+		resultType="cn.edu.nwsuaf.entity.UserAddress">
+		select * from receive_address where user_id =#{id}
+	 </select>
+
+
+	<!-- 获取指定用户的地址列表(user表-address表：1对多关系) -->
+	<resultMap type="cn.edu.nwsuaf.entity.User" id="UserMapAddress">
+		<id property="id" column="id" />
+		<collection property="addresses" column="id"
+			ofType="cn.edu.nwsuaf.entity.UserAddress" select="findAllAddress">
+			<!-- 配置Dept类中List<Emp> -->
+			<!-- 需要指定属性名，属性的类型属性《集合元素》类型 -->
+			<!-- 属性和通过数据库哪一列和员工关联 以及执行第一个sql同时执行哪一个sql语句-->
+		</collection>
+	</resultMap>
+
+
+	<select id="updateAddress" parameterType="int"
+		resultType="cn.edu.nwsuaf.entity.UserAddress"> <!-- 更新地址  -->
+		select receive_name, province,city,district,full_address,phone,postal_code
+		from receive_address where id= #{id}
+	</select>
+
+	<select id="deleteAddress" parameterType="int"> <!-- 删除地址  -->
+		delete from receive_address where id = #{id}
+	</select>
+
+	<!--
+
+		<select id="findById" parameterType="int"
+		resultType="cn.edu.nwsuaf.entity.User"> select * from user where
+		id=#{id} </select>
+	-->
+</mapper>

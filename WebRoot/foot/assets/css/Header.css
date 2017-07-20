@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#F2F2F2;
+	font-size:12px;
+}
+* {
+	margin:0px;
+	padding:0px;
+	font:Verdana, Geneva, sans-serif;
+}
+div{
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+#header {
+	background-color:#FFF;
+	height:26px;
+	position:relative;
+	top:0px;
+ width:window.screen.width;
+	z-index: 10;
+	text-align: center;
+}
+.header1 {
+	position:relative;
+	left:200px;
+	top:6px;
+	float:left;
+}
+.header2 {
+	position:relative;
+	right:200px;
+	float:right;
+	z-index:1;
+}
+.header1 a:hover {
+	color:#B70409;
+}
+.header1 a {
+	text-decoration:none;
+	color:#000;
+}
+.header2 a:hover {
+	color:#B70409;
+}
+.header2 a {
+	text-decoration:none;
+	color:#000;
+}
+nav ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.nav {
+	width: 320px;
+	margin: 0 auto;
+	background-color:#FFF;
+	color:#000;
+}
+.nav a {
+	display: block;
+	padding: 0 2px;
+	line-height: inherit;
+	cursor: pointer;
+}
+.nav__menu {
+	line-height: 26px;
+	text-transform: uppercase;
+}
+.nav__menu-item {
+	display: inline-block;
+	position: relative;
+	text-align:center;
+}
+.nav__menu-item:hover {
+	background-color:#FFF;
+}
+.nav__menu-item:hover .nav__submenu {
+	display: block;
+}
+.nav__submenu {
+	text-transform: none;
+	display: none;
+	position: absolute;
+	width: 60px;
+	background-color:#FFF;
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+a:hover {
+	color:#006;
+}
+.totop{
+		width:22px;
+		height:65px;
+		color:#fff;
+		position:fixed;
+		right:20px;
+		bottom:0px;
+		cursor:pointer;
+		display:none;
+
+}

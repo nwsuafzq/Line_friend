@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-color:#F2F2F2;
+	font-size:12px;
+	margin:0 auto;
+}
+#con{ 
+	width:1200px; 
+	margin:0 auto;
+}
+#Search{
+	width:1200px;
+	position:relative;
+	top:10px;
+}
+#content{
+	width:1200px;
+	position:relative;
+	top:10px;
+}
+.content1{
+	position:relative;
+	width:800px;
+	height:20px;
+	top:0px;
+	float:left;
+}
+.content2{
+	position:relative;
+	padding-top:20px;
+	width:1000px;
+	top:70px;
+	left:100px;
+	background-color:#FFF;
+	float:left;
+	margin-bottom:80px;
+}
+
+#ban{
+	position:relative;
+	top:30px;
+	width:1050px;
+	height:100px;
+}
+#foot_server {
+	position:relative;
+	top:10px;
+	text-indent:inherit;
+	width:1200px;
+}
+#footer{
+	position:relative;
+	top: 20px;
+	width:1200px;
+	height:100px;
+	text-align:center;
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+#headpay{
+	font-family: "楷体";
+	font-size:40px;
+	color:#FF5555;
+}
+#headpay img{
+	position: relative;
+	margin-top:0px;
+	margin-left:400px; 
+	float: left;
+}
+#headpay div{
+	margin-left:450px; 
+	padding-top:60px; 
+}
+#pay_re{	
+	position: relative;
+	height: 700px;
+	width: 1000px;
+	margin-top:2px; 
+	margin-left:450px;
+	font-family: "幼圆";
+	font-size: 34px; 
+	color:#72C43C;
+	background-color: #FCE6E0;
+}
+#pay_re div{
+	margin-left:130px;
+	padding-top:30px;  
+}
+#pay_re img{
+	margin-top:100px; 
+	margin-left:380px; 
+	float: left;
+}
+#pay_rea a{
+	font-family: "楷体";
+	font-size: 20px;
+}
+#cr{
+	position: relative;
+	font-family: "黑体";
+	font-size: 16px;
+	margin-top: 10px;
+
+}
+#imga{
+	position: absolute;
+	height: 50px;
+	width: 1000px;
+	background-color: #FCE6E0;
+	font-size: 20px;
+	margin-top:-200px;
+	margin-left:450px;  
+	float: left;
+}
+#imga a{
+	margin-left:200px; 
+}
+
+
+

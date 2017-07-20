@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+#foot_server dl {
+	float:left;
+	margin-left:80px;
+	margin-top:50px;
+}
+#foot_server dt {
+	color:#999;
+}
+#foot_server dl>dt {
+	font-size:14px;
+	margin-bottom:20px;
+}
+#foot_server dl>dd {
+	margin-top:9px;
+	font-size:12px;
+	margin-left:30px;
+}
+#foot_server dl>dd>a:link {
+	text-decoration:none;
+	color:#333;
+}
+#foot_server dl>dd>a:hover {
+	color:#B70409;
+}
+#foot_server div {
+
+	margin-top:30px;
+	width:300px;
+	height:200px;
+	background-repeat:no-repeat;
+	position:relative;
+	right:50px;
+	float:right;
+}
+.footer1 a{text-decoration:none;
+color:#000;}
+.footer1 a:hover{ color:#B70409;}
+

@@ -1,0 +1,11 @@
+#Thu Jul 06 16:00:08 CST 2017
+
+eclipse.preferences.version=1
+encoding//WebRoot/Gonggao.jsp=UTF-8
+encoding//WebRoot/UserAddress.jsp=UTF-8
+encoding//WebRoot/assets/css/login.css=UTF-8
+encoding//src/cn/edu/nwsuaf/controller/order/SubmitOrderAction.java=UTF-8
+encoding//src/cn/edu/nwsuaf/controller/pay/PayServlet.java=UTF-8
+encoding//src/cn/edu/nwsuaf/controller/pay/PaymentUtil.java=UTF-8
+encoding//src/cn/edu/nwsuaf/util/MailUtil.java=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-color:#F2F2F2;
+	font-size:12px;
+	margin:0 auto;
+}
+div {
+	border: 0px solid #000;
+}
+#sea{
+	width:1200px;
+	margin:0 auto;
+    height:200px;
+}
+#foo{
+	width:1200px;
+	margin:0 auto;
+    height:300px;
+ 
+}

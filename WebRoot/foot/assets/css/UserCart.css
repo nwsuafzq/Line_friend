@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+.head {
+	width:1000px;
+	margin:auto;
+}
+.head1 ul {
+	list-style:none;
+}
+.head1 li {
+	float:left;
+	width:100px;
+	margin-left:5px;
+	line-height:30px;
+	font-size:24px;
+	color:#B70409;
+	font-weight:bold;
+}
+.head1 {
+	display:block;
+	text-align:center;
+	height:30px;
+	width:900px;
+}
+.two {
+	position:absolute;
+	height:20px;
+	right:50px;
+	width:180px;
+}
+.short-head {
+	width:1000px;
+	margin:auto;
+	background-color:#DAD6D9;
+	height:60px;
+}
+.short1 {
+	position:relative;
+	line-height:60px;
+	left:0px;
+}
+.column {
+	display:inline;
+	float:left;
+	padding-left:20px;
+	width:140px;
+}
+.column1 {
+	position:relative;
+	left:280px;
+	display:inline;
+	float:left;
+	width:100px;
+	text-align:center;
+}
+.list {
+	position:relative;
+	top:20px;
+	text-decoration:none;
+	list-style:none;
+	width:1000px;
+}
+.listline{
+	height:90px;
+	border-bottom:#333 1px solid;
+}
+.list-left {
+	position:relative;
+	left:20px;
+	display:inline;
+	float:left;
+	width:300px;
+}
+.list-b {
+	display:inline;
+	float:left;
+	width:20px;
+}
+.list-p {
+	display:inline;
+	float:left;
+	width:90px;
+}
+.list-pw{
+	margin-left:40px;
+}
+.list-pname {
+	position:relative;
+	display:inline;
+	float:right;
+	width:140px;
+	height:100px;
+}
+.list-pname a {
+	text-decoration:none;
+}
+
+.right-f1 {
+	position:relative;
+	left:320px;
+	float:left;
+	width:200px;
+	text-align:center;
+}
+.right-f2 {
+	position:relative;
+	float:left;
+	width:90px;
+	text-align:center;
+}
+.right-f3 {
+	position:relative;
+	float:left;
+	left:304px;
+	width:90px;
+	text-align:center;
+}
+.right-f3 a {
+	text-decoration:none;
+}
+.bottom {
+	position:relative;
+	text-align:center;
+	top:10px;
+	width:1000px;
+}
+.short2 {
+	line-height:60px;
+	float:right;
+	width:1000px;
+	background-color:#D9D9D9;
+	
+}
+.bottom1 {
+	display:inline;
+	float:left;
+	padding-left:20px;
+	text-align:center;
+}
+.bottom2 {
+	display:inline;
+	float:left;
+	width:300px;
+}
+.bottom2 a, .bottom3 a {
+	text-decoration:none;
+}
+.bottom2 a:hover {
+	text-decoration:none;
+	color:#B70409;
+}
+
+.bottom3 {
+	position:relative;
+	right:0px;
+	float:right;
+	background-color:#FF3366;
+	width:120px;
+	height:60px;
+}
+.bottom3 a{
+	font-size:18px;
+	font-weight:bold;
+	color:#FFF
+}
+.price-sum {
+	position:relative;
+	right:100px;
+	float:right;
+}
+
+td input{
+	border:#000 solid 1px;
+}
+.goodsimg{
+	height: 80px;
+	width:80px;
+}

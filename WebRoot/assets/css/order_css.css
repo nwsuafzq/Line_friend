@@ -1,0 +1,165 @@
+#hdpay{
+	width: 800px;
+	margin-left:350px; 
+	float: left; 
+}
+#logoimg{
+	margin-left:30px;
+	
+}
+#goodsimg{
+	height: 80px;
+	width: 80px;
+}
+
+#hdpay{
+	position: relative;float: left;
+}
+#hdpay ul{
+	float: left;
+	margin-top:-35px;
+	margin-left:680px; 
+	width: 600px;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+	/* background-color: pink; */
+}
+#hdpay li{
+	list-style: none;
+	float: left;
+	height: 30px;
+	width: 120px;
+	padding-top: 10px;
+	/* background-image: url(../images/li.jpg); */
+}
+#li-sy{
+	background-color: #f36;
+}
+#tableform{
+	padding-top: 70px;
+	width: 1000px;
+	position: relative;
+	
+	margin:70px auto;
+	
+}
+#alladd{
+	font-family: "Trebuchet MS";
+	font-size:16px;
+	/* background-color:#FDF5F0; */
+}
+
+.addressInput{
+	margin-top: 15px;
+	height: 40px;
+	margin-left:10px;
+}
+#orderinfo{
+	width: 1000px;
+	padding-top: 50px;
+	margin:70px auto; 
+}
+#ordershow{
+	margin-top:20px; 
+	padding:15px;
+	margin-bottom:20px; 
+	height: 200px;
+	width: 300px;
+	border:2px solid #f36;
+	position: relative;
+	
+	margin-left:66%; 
+	font-family: "宋体";
+	font-size: 16px;
+	/* background-color:#FDF5F0; */
+}
+#sure{
+	/*float: left;*/
+	margin-bottom:15px; 
+}
+#submit{
+	width: 110px;
+	height: 40px; 
+	margin-left:100px; 
+}
+#tb{
+	width: 1000px;
+	text-align: center;
+	/* background-color:#FDF5F0; */
+}
+#tb th{
+	font-size: 16px;
+}
+
+#tbhead{
+	display: display;
+	color: red;
+}
+
+.goods_show{
+	position: relative;
+	padding-left:20px;
+	margin-left:0px; 
+	text-align: center;
+}
+.goods_show a{
+	float: left;
+}
+.goods_show img{
+	float: left;
+}
+.goods_show p{
+	margin-left: 110px; 
+	padding-top: 30px;
+	width: 200px;
+	text-align: center;
+}
+.trwidth{
+	height: 100px;
+	border-bottom-color: #f36;
+	font-size: 16px;
+}
+hr{
+	border-color: #f36;
+	size: 2px;
+	style:double;
+}
+span{
+	font-family: "Arial";
+	font-size: 16px;
+	font-color: red;
+	
+}
+#summ{
+	font-family: "宋体";
+	color: red;
+	font-size: 20px;
+	margin-top:10px;
+	margin-left:700px;  
+}
+#cp{
+	text-align: center;
+}
+#fontsy{
+	margin-left: 20%;
+}
+#leaveMsgDiv{
+	height: 50px;
+
+}
+#textareaDiv{
+	float: left;
+}
+#titiDiv{
+	margin-left: 82%;
+
+	font-size: 22px;
+}
+#msg{
+	margin-top: -50px;
+}
+.priceSpan{
+	font-size: 20px;
+	color: red;
+}

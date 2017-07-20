@@ -1,0 +1,25 @@
+#adminLogin{
+	
+	width: 550px; 
+	height: 300px;
+	background-color: #DFDFDF;
+	margin:150px auto; 
+}
+.btn{
+	
+	margin-left:160px; 
+	height: 50px;
+	width: 200px;
+}
+.checkbox{
+
+	margin-left: 200px; 
+}
+.form-horizontal{
+	margin:50px auto; 
+}
+#tit{
+	text-align: center;
+	font-size: 22px;
+
+}

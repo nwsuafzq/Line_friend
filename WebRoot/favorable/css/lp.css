@@ -1,0 +1,164 @@
+#Searchposi{
+	padding-left:380px; 
+}
+
+#wi1{
+	width: 100%;
+	background-color: #42B1DF;
+	float: left;
+	/* opacity:0.98; */
+} 
+#wi2{
+	width: 100%;
+	background-color: #1F9CD4;
+	float: left;
+} 
+#wi3{
+	width: 100%;
+	background-color: #FFD7AF;
+	float: left;
+} 
+#wi4{
+	width: 100%;
+	background-color: #FDC1A7;
+	float: left;
+} 
+#wi5{
+	width: 100%;
+	background-color: #E8E9FB;
+	float: left;
+} 
+#wi5{
+	width: 100%;
+	background-color: #F9F0DF;
+	float: left;
+} 
+#wi6{
+	width: 100%;
+	background-color: #ECF4DF;
+	float: left;
+} 
+#wi7{
+	width: 100%;
+	background-color: #DFF4F7;
+	float: left;
+} 
+#wi8{
+	width: 100%;
+	background-color: #F7F0E0;
+	float: left;
+} 
+#wi9{
+	width: 100%;
+	background-color: #F7F0E0;
+	float: left;
+} 
+#wi10{
+	width: 100%;
+	background-color: #F3E4DF;
+	float: left;
+} 
+#wi11{
+	width: 100%;
+	background-color: #DFF4F7;
+	float: left;
+} 
+
+#fl-head{
+	margin-left:360px; 
+	width: 1160px;
+}
+.lpgoods{
+	width: 475px;
+	height: 565px;
+	background-color: #8DD0ED;
+	padding: 20px;
+	float: left;
+	margin-left:35px; 
+	margin-bottom: 20px;
+}
+.lpgoods img{
+
+	margin: 10px;
+	height: 450px;
+	width: 450px;
+	float: left;
+}
+.lpname{
+	
+	font-family: "宋体";
+	color: block;
+	margin-left:15px; 
+	font-size: 28px;
+	/* float: left; */
+}
+.miaoshu{
+	width: 450px;
+	height: 100px;
+	margin-top:460px;
+	margin-left:10px;  
+	background-color: #FFF;
+
+}
+.miaoshu3{
+	width: 300px;
+	height: 100px;
+	/* float: left; */
+	margin-top:-5px; 
+	background-color: #fff;
+}
+.pri{
+	font-size: 34px;
+	margin-left:15px; 
+	margin-top:10px;
+	color: red;
+	float: left; 
+
+}
+.qg img{
+	float: right;
+	margin-top:0px; 
+	margin-right:25px; 
+	width: 92px;
+	height: 42px;
+}
+
+.lpgoods3{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background-color: #8DD0ED;
+	padding: 25px;
+	float: left;
+	margin-left:27px; 
+	margin-bottom: 20px;
+}
+.lpgoods3 img{
+	height:300px;
+	width:300px;
+	/* margin-left: 5px; */
+}
+.lpname3{
+	position: relative;
+	font-family: "宋体";
+	color: block;
+	font-size: 26px;
+	margin-left:15px; 
+	margin-top:5px; 
+}
+.pri3{
+	position: relative;
+	font-size: 32px;
+	margin-left:15px; 
+	margin-top:5px;
+	float: left; 
+	color: red;
+}
+.qg3 img{
+	float: right;
+	margin-top:10px; 
+	margin-right:15px; 
+	width: 92px;
+	height: 42px;
+
+}

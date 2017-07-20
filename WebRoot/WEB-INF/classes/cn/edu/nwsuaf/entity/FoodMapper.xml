@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- author:张琼  -->
+<mapper namespace="cn.edu.nwsuaf.dao.FoodDao">
+
+	<!-- product和food 一对一插入   (上架商品) -->
+	<parameterMap type="cn.edu.nwsuaf.entity.Food" id="foodMap">
+		<parameter property="id" />
+		<parameter property="producer" />
+		<parameter property="produce_date" />
+		<parameter property="expiration_date" />
+		<parameter property="storge" />
+		<parameter property="category" />
+		<parameter property="specification" />
+		<parameter property="product_id" />
+
+	</parameterMap>
+
+	<insert id="addFood" parameterMap="foodMap">
+		insert into food (producer,produce_date,expiration_date
+		,storge,category,specification,product_id)
+		values(#{producer},#{produce_date},#{expiration_date},#{storge},#{category},#{specification},#{product_id})
+	</insert>
+	<!-- ...........................................................  -->
+
+
+
+
+
+
+	<select id="findFoodByProductId" parameterType="int"
+		resultType="cn.edu.nwsuaf.entity.Food">
+		select * from food where product_id=#{product_id}
+	</select>
+
+	<select id="findAllFood" resultType="cn.edu.nwsuaf.entity.Food">
+		select * from food
+	</select>
+	
+	<!-- 陈一婷 -->
+	
+	<update id="updateFoodInfo">
+	    update food set storge=#{storge} where product_id=#{product_id}
+	</update>
+	
+</mapper>

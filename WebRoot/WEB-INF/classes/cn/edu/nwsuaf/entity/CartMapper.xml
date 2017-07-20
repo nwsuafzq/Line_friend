@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- 与MyBatisDemo02相比多了一个接口namespace指定接口位置 -->
+<mapper namespace="cn.edu.nwsuaf.dao.CartDao">
+<!-- 加入购物车 -->
+	
+	<insert id="addCart" parameterType="cn.edu.nwsuaf.entity.Cart" >
+		insert into cart (user_id,product_id,product_count) values(#{user_id},#{product.id},#{product_count})
+	</insert>
+	
+	<!--关联开始-->
+	<!-- 购物车中对应多个商品，一个对多关联 -->
+	<select id="findAllProductByUserId" parameterType="int" resultMap="cartMapperProduct" >
+	  select * from cart where user_id = #{user_id}
+	  
+	 <!--
+	select * from cart join product as p on cart as c p.id = c.product_id
+	 where user_id = #{user_id}
+	 -->
+	 </select>
+	
+	<select id="findAllProdcutByProductId" parameterType="cn.edu.nwsuaf.entity.Cart"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where id =#{product_id}
+	 </select>
+	
+	<resultMap type="cn.edu.nwsuaf.entity.Cart" id="cartMapperProduct">
+		<id property="id" column="id" />
+		<result property="product_count" column="product_count"/>
+		
+		<collection property="product" column="product_id"
+			ofType="cn.edu.nwsuaf.entity.Product" select="findAllProdcutByProductId">
+			<!-- 配置Dept类中List<Emp> -->
+			<!-- 需要指定属性名，属性的类型属性《集合元素》类型 -->
+			<!-- 属性和通过数据库哪一列和员工关联 以及执行第一个sql同时执行哪一个sql语句-->
+		</collection>
+	</resultMap>
+	
+	<!--关联结束 -->
+	
+	<!-- 删除购物车中的单个商品 -->
+	<delete id="delterCartItem" parameterType="int">
+		delete from cart where product_id = #{id}
+	</delete>
+	
+	
+	<!-- 查询购物车中id，判断是否已经加入 购物车 -->
+	<select id="findProductByIdInCart" parameterType="int" resultType="int">
+	select product_id from cart where product_id=#{id}
+	</select>
+	
+	
+	
+	
+	
+</mapper>

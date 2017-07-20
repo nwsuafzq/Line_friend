@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nwsuaf.dao.CommentDao">
+<!--
+	<select id="findCommentByProductId" parameterType="int" resultType="cn.edu.nwsuaf.entity.Comment">
+		select * from comment where product_id=#{product_id}
+	</select>
+	
+-->
+<!-- 根据商品ID查询对应的评论列表 -->
+	<select id="findCommentsByProductId" parameterType="int" resultType="cn.edu.nwsuaf.entity.Comment">
+		select * from comment where product_id = #{product_id}
+	</select>
+
+
+	<insert id="addComment" parameterType="cn.edu.nwsuaf.entity.Comment">
+		insert into comment(content,email,send_time,upvote,product_id)  values(#{content},#{email},#{send_time},#{upvote},#{product_id})
+	</insert>
+</mapper>

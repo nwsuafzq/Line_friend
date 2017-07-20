@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<!--
+		<servlet> <servlet-name>ImageServlet</servlet-name>
+		<servlet-class>com.dw.servlet.ImageServlet</servlet-class> </servlet>
+		<servlet-mapping> <servlet-name>ImageServlet</servlet-name>
+		<url-pattern>/imageServlet</url-pattern> </servlet-mapping>
+	-->
+	<!--
+		<servlet> <servlet-name>VerificationServlet</servlet-name>
+		<servlet-class>com.dw.servlet.VerificationServlet</servlet-class>
+		</servlet> <servlet-mapping>
+		<servlet-name>VerificationServlet</servlet-name>
+		<url-pattern>/verificationServlet</url-pattern> </servlet-mapping>
+	-->
+
+	<!-- 编码过滤器，控制中文字符请求 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<!-- 配置所有请求，登录名可以为中文 -->
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
+	<servlet>
+		<servlet-name>SpringMVC</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>ContextConfigLocation</param-name>
+			<param-value>classpath:springMVC.xml</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SpringMVC</servlet-name>
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+
+	<!-- 注册过滤器-->
+	<filter>
+		<filter-name>protect</filter-name>
+		<filter-class>cn.edu.nwsuaf.filter.ProtectFilter</filter-class>
+	</filter>
+	<!-- 过滤器映射-->
+	<filter-mapping>
+		<filter-name>protect</filter-name>
+		<url-pattern>/User.jsp</url-pattern><!-- 未登录，禁止进入购物车结算界面 -->
+	</filter-mapping>
+
+
+	<!-- Session isExpired Config -->
+	<filter>
+		<filter-name>SessionFilter</filter-name>
+		<filter-class>cn.edu.nwsuaf.filter.SessionFilter</filter-class>
+		<init-param><!--初始第一个参数-->
+			<param-name>noFilter</param-name><!--参数名称，在过滤类中获得-->
+			<param-value>login.action,UserLogin.jsp</param-value>
+		</init-param>
+		<init-param><!--初始第二个参数-->
+			<param-name>past</param-name><!--参数名称，在过滤类中获得-->
+			<param-value>UserLogin.jsp</param-value><!--参数值为过期跳转的页面-->
+		</init-param>
+	</filter>
+</web-app>

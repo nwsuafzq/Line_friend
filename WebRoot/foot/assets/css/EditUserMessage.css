@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-color:#F2F2F2;
+	font-size:12px;
+	margin:0 auto;
+}
+#con {
+	width:1200px;
+	margin:0 auto;
+}
+#Search {
+	position:absolute;
+	top:30px;
+	width:1200px;
+}
+.content2 {
+	position:absolute;
+	top:150px;
+	font-size:14px;
+	width:1200px;
+}
+#Content {
+	width:1200px;
+	height:800px;
+	position:absolute;
+	top:200px;
+}
+#mymessage {
+	position:relative;
+	top:20px;
+	right:100px;
+	float:left;
+	width:800px;
+}
+.mymessage {
+	margin-top:20px;
+	width:800px;
+	background-color:#FFF;
+}
+#ban {
+	position:absolute;
+	top:1000px;
+	width:1200px;
+	background-color:none;
+	height:100px;
+}
+#foot_server {
+	position:absolute;
+	top:1100px;
+	text-indent:inherit;
+	width:1200px;
+}
+#footer {
+	position:absolute;
+	top: 1350px;
+	width:1200px;
+	height:100px;
+	text-align:center;
+}
+

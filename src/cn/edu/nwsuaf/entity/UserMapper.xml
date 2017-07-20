@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.edu.nwsuaf.dao.UserDao">
+
+	<insert id="register" parameterType="cn.edu.nwsuaf.entity.User"> <!-- 注册  -->
+		insert into user(email,password,user_integral, last_login_ip,
+		last_login_time,is_email_verify,email_verify_code,head_image)
+		values(#{email},#{password},#{user_integral},#{last_login_ip},#{last_login_time},#{is_email_verify},#{email_verify_code},#{head_image})
+	</insert>
+
+	<select id="emailIsRegist" parameterType="String"
+		resultType="cn.edu.nwsuaf.entity.User"> <!-- 判断email是否被注册了  -->
+		select *
+		from user where email= #{email}
+	</select>
+
+	<select id="emailVerifyCode" parameterType="String" resultType="String"> <!-- 取出email对应的的验证码  -->
+		select email_verify_code
+		from user where email= #{email}
+	</select>
+
+	<update id="emailVerifySuccess" parameterType="String">	<!-- 通过邮箱验证后将is_email_verify改为“y” -->
+		update user set is_email_verify='y' where email=#{email}
+
+	</update>
+	<select id="findByEmail" parameterType="String"
+		resultType="cn.edu.nwsuaf.entity.User">  <!-- 查找email是否存在 -->
+		select *
+		from user where email=#{email}
+	</select>
+
+	<select id="findByLogin" resultType="cn.edu.nwsuaf.entity.User">  <!-- 登录  -->
+		select *
+		from user where email=#{0} and password=#{1}
+	</select>
+
+	<select id="isEmailVerify" parameterType="String" resultType="String">  <!-- 判断email是否验证了 -->
+		select is_email_verify
+		from user where email=#{email}
+	</select>
+
+	<update id="updateLastLogin" parameterType="cn.edu.nwsuaf.entity.User">
+		update user set
+		last_login_time=#{last_login_time},last_login_ip =#{last_login_ip}
+		where email=#{email}
+	</update>
+
+	<select id="findByEmailToId" parameterType="String" resultType="int">  <!-- 查找email获取user的id-->
+		select id
+		from user where email=#{email}
+	</select>
+
+	<select id="findUserById" parameterType="int"
+		resultType="cn.edu.nwsuaf.entity.User">  <!-- 根据id 查询用户-->
+		select *
+		from user where id=#{id}
+	</select>
+	
+	<!-- 修改个人信息 -->
+
+	<update id="editUserInfo" parameterType="cn.edu.nwsuaf.entity.User">
+		update user set nickName
+		= #{nickName},trueName =#{trueName},sex = #{sex},cardId =
+		#{cardId},year = #{year},mouth = #{mouth},day = #{day},head_image = #{head_image} where id =
+		#{id} 
+	</update>
+
+	<update id="updateEmailVerifyCodeByEmail" parameterType="String">	<!-- 更新邮箱验证码，用在邮箱验证页面重新获取邮箱验证码 -->
+		update user set email_verify_code= #{email_verify_code, jdbcType=VARCHAR} where email =#{email,jdbcType=VARCHAR}
+	</update>
+	
+	
+	<!--查询所有用户-->
+	<!-- Qian -->
+	<select id="findAllUser" resultType="cn.edu.nwsuaf.entity.User">
+		select * from user
+	</select>
+	<select id="findUserBySex" parameterType="String" resultType="cn.edu.nwsuaf.entity.User">
+		select * from user where sex=#{sex}
+	</select>
+	<select id="findUserByNickName" parameterType="String" resultType="cn.edu.nwsuaf.entity.User">
+		select * from user where nickName=#{nickName}
+	</select>
+	
+	<select id="findUserByEmail" parameterType="String" resultType="cn.edu.nwsuaf.entity.User">
+		select * from user where email=#{email}
+	</select>
+	
+	<select id="findUserByIdList" parameterType="int" resultType="cn.edu.nwsuaf.entity.User">
+		select * from user where id=#{id}
+	</select>
+	<delete id="deleteUserById" parameterType="int">
+		DELETE FROM user WHERE id = #{id}
+	</delete>
+	<select id="findUserByAge" parameterType="int" resultType="cn.edu.nwsuaf.entity.User">
+		select * from user where year=#{year}
+	</select>
+	<update id="UpdateInfo" parameterType="cn.edu.nwsuaf.entity.User">
+		update user set nickName=#{nickName},trueName=#{trueName},sex=#{sex},cardId=#{cardId},year=#{year},mouth=#{mouth},day=#{day}
+		where id=#{id}
+	</update>
+	
+</mapper>

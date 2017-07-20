@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+	<!-- 通过种类找商品相关 zq  --> <!-- 暂时 勿添加修改  -->
+<mapper namespace="cn.edu.nwsuaf.dao.CategorySearchDao">
+
+	<!--
+		<select id="findFoodByCategory" parameterType="String"
+		resultType="java.util.List"> select * from food where
+		category=#{category} </select> <select id="findProductIdByFoodId"
+		parameterType="int" resultType="int"> select product_id from food
+		where id=#{id} </select> <select id="findProductByProductId"
+		parameterType="int" resultType="cn.edu.nwsuaf.entity.Product"> select
+		* from product where id=#{product_id} </select>
+	-->
+
+	<select id="findProductsByKeywords" parameterType="String"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where keywords=#{keywords}
+	</select>
+
+</mapper>

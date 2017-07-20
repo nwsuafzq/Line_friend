@@ -1,0 +1,126 @@
+body{
+	background-image: url("../images/bg.png");
+}
+#widths{
+	width: 1200px;
+	margin-left:450px;
+	float: left; 
+}
+font{
+	font-family: "华文行楷";
+	font-size:44px;
+	color: #f36;
+	float: left;
+	height: 40px;
+	width: 100%;
+	margin-top:20px;
+	margin-bottom:20px;  
+}
+#widths div{
+	font-family: "华文行楷";
+	font-size: 24px;
+}
+h2{
+	margin-top:50px;
+	margin-bottom:10px;  
+	color: #f36;
+	font-family: "华文行楷";
+	font-size: 54px;
+	text-align: center;
+}
+#logo{
+	margin-top:10px;
+	float: left; 
+}
+#logo-1{
+	float:left;
+	width: 600px;
+	margin-top:30px; 
+}
+#logo-2{
+	 margin-top: 0px;
+	margin-left:30px; 
+	float: left;
+}
+#wenhua{
+	float: left;
+	width: 1100px;
+}
+#wenhua-3{
+	margin-top:-260px; 
+	margin-left:540px; 
+}
+#wenhua-4{
+	float: left;
+	margin-top:-180px;
+	margin-left:-530px;  
+}
+#wenhua-2{
+	float: left;
+	margin-top:20px;
+	margin-left:200px;  
+}
+#wenhua-5{
+	float: left;
+	margin-left:540px; 
+	margin-top:20px; 
+
+}
+#dongtai{
+	float: left;
+	width: 1100px;
+}
+
+#tamen img{
+	margin-top:10px;
+	margin-left:80px;  
+}
+.tip{
+	text-align: center;
+	font-size: 36px;
+	margin-top:20px;
+	margin-bottom: 20px;  
+
+}
+#showgoods{
+	width: 1100px;
+}
+#goods img{
+	height: 450px;
+	width: 450px;
+	padding-top:20px;
+	padding-bottom:30px;  
+}
+#goodsl{
+	position: relative;
+	float: left; 
+	margin-left:80px; 
+}
+#goodsr{
+	position: relative;
+	float: left;
+	margin-left:600px; 
+	margin-top:-400px; 
+}
+#goods2 img{
+	height: 450px;
+	width: 450px;
+	padding-top:20px;
+	padding-bottom:30px;  
+}
+#goodsl2{
+	position: relative;
+	float: left; 
+	margin-left:600px; 
+
+}
+#goodsr2{
+	position: relative;
+	float: left;
+	margin-left:80px; 
+	margin-top:-400px; 
+}
+#story-sy{
+	padding:20px;
+	background-color: #c0e160;
+}

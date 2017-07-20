@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.edu.nwsuaf.dao.OrderDao">
+
+	<!--刘志伟-->
+	<delete id="deteleByProductId" parameterType="int">
+		detele * form ls.item where product_id = #{product_id}
+	</delete>
+	
+	<select id="findUserOrderByUserId" parameterType="int" resultType="cn.edu.nwsuaf.entity.Order">
+		select * from ls.order where user_id = #{user_id}
+	</select>
+
+	<insert id="insertIntoOrder" parameterType="cn.edu.nwsuaf.entity.Order">
+		insert into ls.order values(#{id},#{user_id},#{status},#{order_time},#{address_id},#{price_amount},#{message})
+	</insert>
+	
+	
+
+	<!-- 后台 查询所有订单信息 -->
+
+	<select id="findAllOrder" 
+		resultType="cn.edu.nwsuaf.entity.Order">
+		select * from ls.order
+	 </select>
+	 
+	 <select id="findUserOrder" 
+		resultType="cn.edu.nwsuaf.entity.Order">
+		select * from ls.order
+	 </select>
+
+	<select id="updateOrder"> <!-- 修改订单状态  -->
+		 update ls.order set status=#{1} where id=#{0}
+	</select>
+
+	<select id="deleteOrder" parameterType="String"> <!-- 删除订单  -->
+		delete from ls.order where id = #{id}
+	</select>
+	 <!-- 按条件查询订单  -->
+	<select id="findOrderByorder_id" parameterType="String" resultType="cn.edu.nwsuaf.entity.Order">
+		select * from ls.order where id=#{id}
+	</select>
+	
+	<select id="findOrderByorder_time" parameterType="String" resultType="cn.edu.nwsuaf.entity.Order">
+		select * from ls.order where order_time=#{order_time}
+	</select>
+	
+	<select id="findOrderByuser_id" parameterType="int" resultType="cn.edu.nwsuaf.entity.Order">
+		select * from ls.order where user_id=#{user_id}
+	</select>
+	<select id="findAddressById" parameterType="String" resultType="cn.edu.nwsuaf.entity.UserAddress">
+		select * from receive_address where id=#{id}
+	</select>
+	<select id="findItemById" parameterType="String" resultType="cn.edu.nwsuaf.entity.Item">
+		select * from item where order_id=#{order_id}
+	</select>
+</mapper>

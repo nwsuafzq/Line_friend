@@ -1,0 +1,44 @@
+#condtion{
+	height: 30px;
+	width: 200px;	
+}
+.tbShow{
+	font-size: 16px;
+}
+.form-group{
+	padding-top: 20px;
+	float: left;
+}
+.clean{
+	height: 30px;
+	width: 100%;
+}
+.selectSy{
+	
+	display: inline-block;	
+}
+#serch{
+	height: 50px;
+	width: 100%;
+}
+
+
+.UpdatePanl input{
+	height: 30px;
+	width: 80px;
+}
+.labelSy{
+	display: inline;
+	float: left; 
+}
+#UpdatePanl{
+	padding-top: 50px;
+	padding-left:30px;
+	height: 550px;
+	width: 750px;
+	margin:30px auto; 
+	border: 3px #9FCDDA dashed;
+}
+.inputDiv{
+	height: 60px;
+}

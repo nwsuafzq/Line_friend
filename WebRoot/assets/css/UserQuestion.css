@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.FreightTable{
+	text-align:center;
+	border:1px solid #999;
+	height:100px;
+}
+h1{
+	font-size:20px;
+	color:#C91623;
+	font:"Times New Roman", Times, serif;
+	line-height:40px;
+}
+p{
+	font-size:14px;
+	font:Arial, Helvetica, sans-serif;
+	color:#000;
+}
+.question{
+	font-size:16px;
+	color:#000;
+	line-height:30px;	
+	background-color:#FFF;
+	margin-right:100px;
+	margin-bottom:20px;
+}
+.answer{
+	margin-left:100px;
+	margin-bottom:20px;
+	padding:5px;
+	letter-spacing:2px;
+	text-indent:2em;
+	line-height:25px;
+	background-color:#F2F2F2;
+	border-radius:4px 4px 4px 4px;
+}
+.answerPic1{
+	position:relative;
+	left:300px;
+	margin-bottom:10px;
+	width:500px;
+}
+.answerPic2{
+	position:relative;
+	left:200px;
+	top:3px;
+	width:500px;
+	margin-bottom:20px;
+}
+.answerPic3{
+	position:relative;
+	left:200px;
+	width:500px;
+}
+.QA{
+	position:relative;
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:20px;
+}
+#content{
+	background-color:#FFF;
+}

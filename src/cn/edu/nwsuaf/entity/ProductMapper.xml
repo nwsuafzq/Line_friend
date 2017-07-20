@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+	
+<mapper namespace="cn.edu.nwsuaf.dao.ProductDao">
+	<!-- 查询商品信息 -->
+	<select id="findProductById" parameterType="int"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where id=#{id}	
+	</select>
+
+	<select id="findAllProduct" resultType="cn.edu.nwsuaf.entity.Product">
+	<!--	SELECT *
+		FROM `product` AS
+		t1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM
+		`product`)-(SELECT MIN(id) FROM `product`))+(SELECT MIN(id) FROM
+		`product`)) AS id) AS t2
+		WHERE t1.id >= t2.id
+		ORDER BY t1.id LIMIT 20;
+	-->
+	 select * from product order by rand() limit 30
+	
+	</select>
+
+	<!-- 陈一婷 -->
+	<select id="findAllProduct1" resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product
+	</select>
+
+
+	<select id="findProductByName" parameterType="String"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where product_name=#{name}
+	</select>
+
+	<select id="findProductById1" parameterType="int"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where id=#{id}	
+	</select>
+
+	<select id="findProductByCategory" parameterType="String"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where keywords=#{category}
+	</select>
+
+	<select id="findProductByPrice" parameterType="double"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where dangqian_price=#{price}
+	</select>
+
+	<select id="findProductByAddTime" parameterType="long"
+		resultType="cn.edu.nwsuaf.entity.Product">
+		select * from product where add_time=#{addTime}
+	</select>
+	
+	<update id="deleteProductById" parameterType="int"> 
+		update product set has_deleted=1 where id = #{id}
+	</update>
+	
+	<update id="resumeProductById" parameterType="int"> 
+		update product set has_deleted=0 where id = #{id}
+	</update>
+
+
+	<update id="updateProductInfo" parameterType="cn.edu.nwsuaf.entity.Product">
+		update product set
+		product_name=#{product_name},description=#{description},dangqian_price=#{dangqian_price},keywords=#{keywords} 
+		where id=#{id}
+	</update>
+	
+	
+	
+	
+
+	<!-- 张琼  -->
+	<!-- product和food 一对一关联插入   (用于 上架商品功能) -->
+	<parameterMap type="cn.edu.nwsuaf.entity.Product" id="parameterProductMap">
+		<parameter property="id" />
+		<parameter property="product_name" />
+		<parameter property="description" />
+		<parameter property="fixed_price" />
+		<parameter property="dangqian_price" />
+		<parameter property="keywords" />
+		<parameter property="product_pic" />
+	</parameterMap>
+
+	<insert id="addProduct" parameterMap="parameterProductMap">
+		<!-- 获取刚插入的product的自动生成的主键id；（用来插入food表的product_id）-->
+		<selectKey keyProperty="id" resultType="int" order="AFTER">
+			SELECT LAST_INSERT_ID() AS ID 
+    </selectKey>
+		insert into product (product_name,description,add_time
+		,fixed_price,dangqian_price,keywords,product_pic)
+		values(#{product_name},#{description},#{add_time},#{fixed_price},#{dangqian_price},#{keywords},#{product_pic})
+	</insert>
+	
+	
+	<!-- ................................................. -->
+
+
+	<!--
+		<insert id="addProduct" parameterType="cn.edu.nwsuaf.entity.Product" >
+		insert into product (product_name,description,add_time
+		,fixed_price,dangqian_price,keywords,product_pic)
+		values(#{product_name},#{description},#{add_time},#{fixed_price},#{dangqian_price},#{keywords},#{product_pic})
+		</insert>
+	-->
+	<select id="findProductIdByName" parameterType="String"
+		resultType="int">
+		select id from product where product_name=#{product_name}
+	</select>
+
+	<!--
+		<insert id="addFood" parameterType="cn.edu.nwsuaf.entity.Food" >
+		insert into food (producer,produce_date,expiration_date
+		,storge,category,specification,product_id)
+		values(#{producer},#{produce_date},#{expiration_date},#{storge},#{category},#{specification},#{product_id})
+		</insert>
+	-->
+	
+
+</mapper>

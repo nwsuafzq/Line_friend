@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+.bt ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.bt {
+	width: 1200px;
+	margin: 0 auto;
+	background-color:#FF3366;
+}
+.bt a {
+	display: block;
+	padding: 0 20px;
+	line-height: inherit;
+	cursor: pointer;
+	color:#FFF;
+	text-decoration:none;
+}
+.bt0 {
+	line-height: 40px;
+	text-transform: uppercase;
+}
+.bt1 {
+	display: inline-block;
+	position: relative;
+	text-align:center;
+	font-weight:bold;
+}
+.bt1:hover {
+	background-color:#900;
+}
+.bt1:hover .bt2 {
+	display: block;
+}
+.bt2 {
+	text-transform: none;
+	display: none;
+	position: absolute;
+	background-color:#FFF;
+	border:#B70409 1px solid;
+	z-index:10;
+}
+.bt3 {
+	display:inline-block;
+	position:relative;
+	text-align:left;
+	z-index:10;
+	font-weight:100;
+	padding-left:0px;
+	width: 220px;
+}
+.bt3 a {
+	color:#000;
+	volume:medium;
+}
+.bt3 a:hover {
+	color:#B70409;
+}
+a:active, a:visited {
+	text-decoration:none;
+}

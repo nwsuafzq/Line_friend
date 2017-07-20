@@ -1,0 +1,99 @@
+#AllOrders {
+	height: 240px;
+}
+
+.AllOrders32 {
+	float: right;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.Search1 {
+	position: relative;
+	left: 100px;
+	top: 30px;
+	float: left;
+	clip: rect(auto, auto, 50px, auto);
+	right: 10px;
+}
+
+#mymessage {
+	position: absolute;
+	top: 20px;
+	width: 1000px;
+	left: 100px;
+}
+
+#AllOrders {
+	width: 1000px;
+	height: 300px;
+	background-color: #FFF;
+	float: left;
+}
+
+#Content {
+	width: 1200px;
+	height: 450px;
+	position: absolute;
+	top: 50px;
+}
+
+#ban {
+	position: absolute;
+	top: 600px;
+	width: 1200px;
+	background-color: none;
+	height: 100px;
+}
+
+#foot_server {
+	position: absolute;
+	top: 500px;
+	text-indent: inherit;
+	width: 1200px;
+}
+
+#footer {
+	position: absolute;
+	top: 750px;
+	width: 1200px;
+	height: 100px;
+	text-align: center;
+}
+.orderDiv{
+	text-align: left;
+	font-size: 16px;
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+#payTable{
+	width: 100%;
+	background-color: #fff;
+	padding-bottom: 20px;
+
+}
+.backDiv{
+	text-align: left;
+	font-size: 16px;
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+#payBotton{
+	/* background-image: url(../homeImages/pay.png); */
+	height: 35px;
+	width: 120px;
+	background-color: #f36;
+	color: #fff;
+	font-size: 20px;
+	
+	border: 1px solid #3270A1;
+}
+#payTable img{
+	height: 32px;
+	
+	margin-bottom:-8px;
+}

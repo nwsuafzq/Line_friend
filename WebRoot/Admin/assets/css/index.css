@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+body{   
+    width: 100%;   
+    height: 100%;   
+    font-family: 'Open Sans',sans-serif;   
+    margin: 0;   
+   	box-sizing:border-box;
+   /*  background-image: url(../homeImages/6.jpg); */
+   /*  background-color: #4A374A; */   
+  
+}   
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+#head{
+	width: 100%;
+	height: 80px;
+	font-size: 26px;
+	background-color: #000;
+}
+#head img{
+	margin-left: 30px;
+	height: 32px;
+	width: 32px;
+}
+
+#head>.nav li{
+	height: 80px; 
+	width: 200px;
+	text-align: center;
+	padding-top: 47px;
+	
+}
+
+#head>.nav{
+	width: 100%;
+
+}
+#head>.nav>li>a{
+	line-height: 35px;
+	margin-top:-20px;
+	
+}
+
+
+#width{
+	width: 100%;
+	 
+}
+
+#left{
+	width: 18%;
+	height: 1200px; 
+	float: left;
+	border-top: 1px #DDDDDD solid;
+	border-right: 3px #DDDDDD solid;
+	background-color: #000;
+	/* background-color: green; */
+	/* background-image:url(../homeImages/left.jpg); 	 */
+	/* background-repeat: no-repeat; */
+}
+
+.accordion-heading .accordion-toggle{
+	padding-top: 5px;
+	font-size:28px;
+}
+.accordion-inner{
+	padding-left: 30px;
+	background-color: #fff;
+	
+}
+
+
+#left .accordion-group a{
+	color: #fff;
+}
+#left .accordion-inner a{
+	color: #000;
+}
+.accordion-body a{
+	font-size: 28px;
+}
+.accordion-group{
+	background-color: #000;
+}
+.accordion-group a{
+	display: inline-block;
+	padding-top:10px;
+	height: 50px;
+	padding-left: 30px;
+}
+#right{
+	width: 82%;
+	height: 100%; 
+	float: left;
+	/* background-image:url(../homeImages/7.jpg);  */
+	/* background-repeat: no-repeat; */
+}
+#right>.tabbable>.nav>a{
+	font-size: 30px;
+}
+#left ul{
+	list-style: none;
+	/* box-sizing: border-box; */
+	text-align: center;
+	padding-top: 60px;
+	
+}
+	
+
+#formSy{
+	display: inline-block;
+	float: left;
+	padding-top:30px;
+	height: 100px;
+	width: 100%;
+
+}
+.selectSy{
+	display: inline-block;
+	float: left;
+	margin-left:350px; 
+	margin-top: 5px;
+}
+
+#width>#left{
+	padding-top: 100px;
+}
+#right>.tabbable>.nav>li>a{
+	line-height: 32px;
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	
+}
+#left>.container-fluid{
+	font-size: 22px;
+}
+#tbShow>.clean>.table{
+	text-align: center;
+}
+/* #right>.tabbable>.nav>li{
+	width: 100px;
+} */
+/* #right>.tabbable>.nav>.active li{
+	background-color: blue;
+} */
+
+span{
+	position: relative;
+	display: inline-block;
+	left:20%;
+	text-align: center;
+	height:80px;
+	padding-top:40px;
+	color: #fff;
+	font-size: 54px;
+}
+.adminid{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	height:30px;
+	margin-left:27%;
+}
+#page{
+	position: relative;
+	height: 40px;
+	/* margin-top: 10px; */
+	margin-left:30%;
+	
+}
+#page input{
+	height: 30px;
+	font-size: 16px;
+	width: 60px;
+}

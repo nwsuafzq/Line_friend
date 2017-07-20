@@ -1,0 +1,78 @@
+.accordion-heading img{
+	height: 24px;
+	width: 24px;
+	display: inline;
+	margin-left: 45px;
+}
+.accordion-inner img{
+	height: 12px;
+	width: 12px;
+	display: inline;
+	margin-left: 60px;
+}
+.accordion-group{
+	font-size: 20px;
+}
+.container-fluid{
+	margin-top: 50px;
+}
+.accordion-inner a{
+	font-size: 16px;
+	margin-left: 25px;
+}
+.view{
+	height: 700px;
+	width: 35%;
+	margin-top:20px;
+	margin-left:30%;
+	padding:5px 30px; 
+	margin-bottom: 25px;
+	float: left;
+	border: 3px #9FCDDA dashed;
+} 
+.col-sm-10{
+	float: left;
+} 
+.form-group{
+	float: left;
+	height: 50px;
+} 
+
+#seleimg{
+	margin-left:100px;
+	margin-top:20px;  
+	float: left;
+}
+
+#sjbotton{
+	margin-left:150px;
+	margin-top:20px;  
+}
+#sjbotton input{
+	height: 30px;
+	width: 100px;
+}
+
+table img{
+	height: 100px;
+	width: 130px;
+}
+#Showimg{
+	position: absolute;
+	height: 250px;
+	width: 300px;
+	margin-left: 500px;
+	float:left;
+	margin-top:-130px; 
+}
+#upbon{
+	margin-left: 650px;
+	margin-top:40px; 
+}
+
+#seleNewimg{
+	margin-left:500px;
+	margin-top:-50px; 
+}
+
+

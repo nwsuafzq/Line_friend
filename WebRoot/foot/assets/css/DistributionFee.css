@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.prompt1{
+	float:left;
+	margin-left:10px;
+	margin-top:25px;
+	color:#999999;
+}
+.DistributionFee{
+	width:754px;
+	height:600px;
+	border:3px solid #E6E6E6;
+	margin-left:20px;
+	margin-top:65px;
+	background-color:#FFFFFF;
+}
+
+
+.leftTd{
+	color:#999999;
+	padding:2px;
+}
+.rightTd{
+	color:#666666;
+}
+
+.prompt2{
+	float:left;
+	margin-left:10px;
+	margin-top:15px;
+	color:#999999;
+	padding-bottom:30px;
+}
+.bg_blue{color:#999999;}

@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+.headf {
+	font-size:14px;
+	color:#B70409;
+	font-weight:bold;
+	padding:15px;
+}
+.type{
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+	padding-left:15px;
+	padding-right:15px;
+	height:30px;
+	padding-top:15px;
+}
+.typechoose{
+	width:90px;
+}
+li{
+	text-decoration:none;
+	display: inline-block;
+}
+li a:hover{
+	color:#B70409;
+}
+.head-g,.ops{
+	margin-left:20px;
+	padding-top:20px;
+	padding-bottom:20px;}
+.head-g a{
+	margin-left:50px;
+}
+.head-g a:hover,.p-comments a:hover,.p-name a:hover,.p-opbtns a:hover{
+	color:#B70409;
+}
+.p-img,.p-name,.p-comments{
+	padding-top:20px;
+}
+
+.goods{
+	margin-left:40px;
+	float:left;
+}
+.p-img {
+	width:210px;
+	text-align:center;
+}
+.p-name {
+	width:210px;
+}
+.p-name jdcheckbox {
+	display:inline
+}
+.p-name a {
+	display:inline;
+	text-decoration:none;
+}
+.p-comments a {
+	text-decoration:none;
+}
+.p-opbtns{
+	padding-bottom:30px;
+}
+.p-opbtns a {
+	text-decoration:none;
+}
+.p-price{
+	color:#B70409;
+	font-size:14px;
+	font-weight:bold;
+}
+.ops a {
+	text-decoration:none;
+}
+.page a {
+	text-decoration:none;
+}
+.page {
+	float:right;
+	display:inline;
+	padding:20px;
+	position:relative;
+	top:-55px;
+}
+.page input{
+	border:1px #000 solid;
+}

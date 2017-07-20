@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Personality{
+	width:1100px;
+	height:30px;
+	position:relative;
+	top:10px;
+	left:10px;
+	margin:0 auto;
+}
+.Personality1,.Personality2,.Personality3,.Personality4{
+	float:left;
+}
+.Personality1{
+	position:relative;
+	left:30px;
+}
+.Personality1 a{
+	font-size:22px;
+	color:#333333;
+	text-decoration:none;
+}
+.Personality2{
+	position:relative;
+	top:2px;
+	left:55px;
+}
+.Personality2 a{
+	font-size:18px;
+	color:#333333;
+	text-decoration:none;
+}
+.Personality3{
+	position:relative;
+	left:80px;
+	top:6px;
+	height:30px;
+}
+.Personality3 ul{
+	list-style-type:none;
+}
+.Personality3 ul li{
+	position:relative;
+}
+.Personality3 ul li ul{
+	display:none;
+}
+
+.Personality3 ul li:hover ul{
+	display:block;
+	position:absolute;
+	z-index:100;
+	background:#FFF;
+	border:1px solid #E7E7E7;
+}
+.Personality3 ul li:hover ul li a{
+    width:80px;
+	text-align:center;
+	display:block;
+}
+.Personality3 a{
+	text-decoration:none;
+}
+
+.Personality4{
+	width:50px;
+}
+.Personality4 a{
+	color:#333333;
+	font-size:14px;
+}
+.Personality42 a{
+	font-size:12px;
+	color:#777777;
+	padding:9px;
+}
+.Personality42 a:hover{
+	text-decoration:none;
+	color:#B70409;
+	display:block;
+	background-color:#F2F2F2;
+}
+
+#VerticalBar{
+	width:150px;
+	height:700px;
+	position:relative;
+	left:100px;
+	float:left;
+	top:20px;
+}
+.VerticalBar11{
+	margin-top:25px;
+}
+.VerticalBar21{
+	margin-top:25px;
+}
+.VerticalBar31{
+	margin-top:25px;
+}
+.VerticalBar41{
+	margin-top:25px;
+}
+.VerticalBar51{
+	margin-top:25px;
+}
+p{
+	font-size:12px;
+	color:#333333;
+	font-weight:bold;
+}
+.Same{
+	margin-top:10px;
+}
+.Same a{
+	color:#777777;
+	font-size:14px;
+	text-decoration:none;
+}
